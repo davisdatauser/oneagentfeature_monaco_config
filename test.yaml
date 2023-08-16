@@ -1,0 +1,4 @@
+[rpm]
+  rpm_enabled=true
+[extension_controller]
+  extension_controller_enabled=true

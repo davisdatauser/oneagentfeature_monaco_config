@@ -1,0 +1,14 @@
+manifestVersion: 1.0
+projects:
+  - name: oneagentfeatures_monaco_config
+    path: ./
+
+environmentGroups:
+  - name: development
+    environments:
+      - name: development-environment
+        url:
+          value: "https://XXXXXXX.live.dynatrace.com"
+        auth:
+          token:
+            name: "devToken"

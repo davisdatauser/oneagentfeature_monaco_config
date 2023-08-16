@@ -1,0 +1,1093 @@
+configs:
+- id: kubelet_context_logs
+  config:
+    name: kubelet
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-0777857713198EF0
+- id: kubelet_context_unstructured
+  config:
+    name: kubelet
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-0777857713198EF0
+- id: OneAgent extensions controller tpc-demo-sprint-*-oneagent dynatrace-oneagent_context_logs
+  config:
+    name: OneAgent extensions controller tpc-demo-sprint-*-oneagent dynatrace-oneagent
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-08AC2CFAA0C0D83E
+- id: OneAgent extensions controller tpc-demo-sprint-*-oneagent dynatrace-oneagent_context_unstructured
+  config:
+    name: OneAgent extensions controller tpc-demo-sprint-*-oneagent dynatrace-oneagent
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-08AC2CFAA0C0D83E
+- id: dnsmasq-nanny kube-dns-*_context_logs
+  config:
+    name: dnsmasq-nanny kube-dns-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-0F006AEA7E585EC4
+- id: dnsmasq-nanny kube-dns-*_context_unstructured
+  config:
+    name: dnsmasq-nanny kube-dns-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-0F006AEA7E585EC4
+- id: Short-lived processes_context_logs
+  config:
+    name: Short-lived processes
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-0F3C6D916E9F6AA6
+- id: Short-lived processes_context_unstructured
+  config:
+    name: Short-lived processes
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-0F3C6D916E9F6AA6
+- id: Dynatrace ActiveGate_context_logs
+  config:
+    name: Dynatrace ActiveGate
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-10B552AB0F3DC2CB
+- id: Dynatrace ActiveGate_context_unstructured
+  config:
+    name: Dynatrace ActiveGate
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-10B552AB0F3DC2CB
+- id: log-counter_context_logs
+  config:
+    name: log-counter
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-1D23FD1BD40DFC92
+- id: log-counter_context_unstructured
+  config:
+    name: log-counter
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-1D23FD1BD40DFC92
+- id: google_osconfig_agent_context_logs
+  config:
+    name: google_osconfig_agent
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-2633A27D8A5210E9
+- id: google_osconfig_agent_context_unstructured
+  config:
+    name: google_osconfig_agent
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-2633A27D8A5210E9
+- id: OneAgent system monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent_context_logs
+  config:
+    name: OneAgent system monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-405DC83622286F00
+- id: OneAgent system monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent_context_unstructured
+  config:
+    name: OneAgent system monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-405DC83622286F00
+- id: tomcat easytravel-angular-frontend-*_context_logs
+  config:
+    name: tomcat easytravel-angular-frontend-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-43A18A5E2BE0B6BB
+- id: tomcat easytravel-angular-frontend-*_context_unstructured
+  config:
+    name: tomcat easytravel-angular-frontend-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-43A18A5E2BE0B6BB
+- id: dynatrace-operator dynatrace-operator-*_context_logs
+  config:
+    name: dynatrace-operator dynatrace-operator-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-44078C1DEEF6F284
+- id: dynatrace-operator dynatrace-operator-*_context_unstructured
+  config:
+    name: dynatrace-operator dynatrace-operator-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-44078C1DEEF6F284
+- id: crictl_context_logs
+  config:
+    name: crictl
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-54637EB532073EFE
+- id: crictl_context_unstructured
+  config:
+    name: crictl
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-54637EB532073EFE
+- id: systemd-resolved_context_logs
+  config:
+    name: systemd-resolved
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-572A3A1667511BA4
+- id: systemd-resolved_context_unstructured
+  config:
+    name: systemd-resolved
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-572A3A1667511BA4
+- id: Linux System_context_logs
+  config:
+    name: Linux System
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-592FFE7E776DCD67
+- id: Linux System_context_unstructured
+  config:
+    name: Linux System
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-592FFE7E776DCD67
+- id: OneAgent network monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent_context_logs
+  config:
+    name: OneAgent network monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-5F4861F5B471D943
+- id: OneAgent network monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent_context_unstructured
+  config:
+    name: OneAgent network monitoring tpc-demo-sprint-*-oneagent dynatrace-oneagent
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-5F4861F5B471D943
+- id: pod_nanny metrics-server-v*-*_context_logs
+  config:
+    name: pod_nanny metrics-server-v*-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-614401233BD91551
+- id: pod_nanny metrics-server-v*-*_context_unstructured
+  config:
+    name: pod_nanny metrics-server-v*-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-614401233BD91551
+- id: cluster-proportional-autoscaler konnectivity-agent-autoscaler-*_context_logs
+  config:
+    name: cluster-proportional-autoscaler konnectivity-agent-autoscaler-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-61BCB9EDEBDC67E5
+- id: cluster-proportional-autoscaler konnectivity-agent-autoscaler-*_context_unstructured
+  config:
+    name: cluster-proportional-autoscaler konnectivity-agent-autoscaler-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-61BCB9EDEBDC67E5
+- id: csi-node-driver-registrar pdcsi-node_context_logs
+  config:
+    name: csi-node-driver-registrar pdcsi-node
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-6658E2BFA844C274
+- id: csi-node-driver-registrar pdcsi-node_context_unstructured
+  config:
+    name: csi-node-driver-registrar pdcsi-node
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-6658E2BFA844C274
+- id: OneAgent log analytics_context_logs
+  config:
+    name: OneAgent log analytics
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-69887BCD3463106F
+- id: OneAgent log analytics_context_unstructured
+  config:
+    name: OneAgent log analytics
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-69887BCD3463106F
+- id: '*-server-with-metrics l*-default-backend-*_context_logs'
+  config:
+    name: '*-server-with-metrics l*-default-backend-*'
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-6AB9EEC1FDFD5BC5
+- id: '*-server-with-metrics l*-default-backend-*_context_unstructured'
+  config:
+    name: '*-server-with-metrics l*-default-backend-*'
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-6AB9EEC1FDFD5BC5
+- id: gce-pd-csi-driver pdcsi-node_context_logs
+  config:
+    name: gce-pd-csi-driver pdcsi-node
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-6C8240FAC20ABE75
+- id: gce-pd-csi-driver pdcsi-node_context_unstructured
+  config:
+    name: gce-pd-csi-driver pdcsi-node
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-6C8240FAC20ABE75
+- id: watcher container-watcher_context_logs
+  config:
+    name: watcher container-watcher
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-737970FDF35F7072
+- id: watcher container-watcher_context_unstructured
+  config:
+    name: watcher container-watcher
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-737970FDF35F7072
+- id: dynatrace-operator dynatrace-webhook-*_context_logs
+  config:
+    name: dynatrace-operator dynatrace-webhook-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-868C4E448328D3EF
+- id: dynatrace-operator dynatrace-webhook-*_context_unstructured
+  config:
+    name: dynatrace-operator dynatrace-webhook-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-868C4E448328D3EF
+- id: netd netd_context_logs
+  config:
+    name: netd netd
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-8E325E2C89B6D286
+- id: netd netd_context_unstructured
+  config:
+    name: netd netd
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-8E325E2C89B6D286
+- id: uemload.jar loadgenerator-*_context_logs
+  config:
+    name: uemload.jar loadgenerator-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9718D10516738BAA
+- id: uemload.jar loadgenerator-*_context_unstructured
+  config:
+    name: uemload.jar loadgenerator-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9718D10516738BAA
+- id: MongoDB easytravel-mongodb-* easytravel-mongodb_context_logs
+  config:
+    name: MongoDB easytravel-mongodb-* easytravel-mongodb
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9983D3E05E4EAA8C
+- id: MongoDB easytravel-mongodb-* easytravel-mongodb_context_unstructured
+  config:
+    name: MongoDB easytravel-mongodb-* easytravel-mongodb
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9983D3E05E4EAA8C
+- id: gke-metadata-server gke-metadata-server_context_logs
+  config:
+    name: gke-metadata-server gke-metadata-server
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9C31E4952C9D41D8
+- id: gke-metadata-server gke-metadata-server_context_unstructured
+  config:
+    name: gke-metadata-server gke-metadata-server
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9C31E4952C9D41D8
+- id: metrics-server metrics-server-v*-*_context_logs
+  config:
+    name: metrics-server metrics-server-v*-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9C55964D1797D4B0
+- id: metrics-server metrics-server-v*-*_context_unstructured
+  config:
+    name: metrics-server metrics-server-v*-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9C55964D1797D4B0
+- id: device_policy_manager_context_logs
+  config:
+    name: device_policy_manager
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9D729FE5B714B427
+- id: device_policy_manager_context_unstructured
+  config:
+    name: device_policy_manager
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-9D729FE5B714B427
+- id: kube-dns kube-dns-*_context_logs
+  config:
+    name: kube-dns kube-dns-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-A7FDB59E57FB4C94
+- id: kube-dns kube-dns-*_context_unstructured
+  config:
+    name: kube-dns kube-dns-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-A7FDB59E57FB4C94
+- id: tomcat easytravel-backend-*_context_logs
+  config:
+    name: tomcat easytravel-backend-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-AF48B46D4A65C6FE
+- id: tomcat easytravel-backend-*_context_unstructured
+  config:
+    name: tomcat easytravel-backend-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-AF48B46D4A65C6FE
+- id: kube-proxy kube-proxy-gke-tpc-demo-sprint--tpc-demo-sprint--*-lzd*_context_logs
+  config:
+    name: kube-proxy kube-proxy-gke-tpc-demo-sprint--tpc-demo-sprint--*-lzd*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-B2B3238524D54EE4
+- id: kube-proxy kube-proxy-gke-tpc-demo-sprint--tpc-demo-sprint--*-lzd*_context_unstructured
+  config:
+    name: kube-proxy kube-proxy-gke-tpc-demo-sprint--tpc-demo-sprint--*-lzd*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-B2B3238524D54EE4
+- id: containerd_context_logs
+  config:
+    name: containerd
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-C279530A9E029217
+- id: containerd_context_unstructured
+  config:
+    name: containerd
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-C279530A9E029217
+- id: proxy-agent konnectivity-agent-*_context_logs
+  config:
+    name: proxy-agent konnectivity-agent-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-C35ACE8270D6E9FA
+- id: proxy-agent konnectivity-agent-*_context_unstructured
+  config:
+    name: proxy-agent konnectivity-agent-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-C35ACE8270D6E9FA
+- id: node-problem-detector_context_logs
+  config:
+    name: node-problem-detector
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-C4C788256FBC71B9
+- id: node-problem-detector_context_unstructured
+  config:
+    name: node-problem-detector
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-C4C788256FBC71B9
+- id: tomcat easytravel-frontend-*_context_logs
+  config:
+    name: tomcat easytravel-frontend-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-D26009D0472AA0BE
+- id: tomcat easytravel-frontend-*_context_unstructured
+  config:
+    name: tomcat easytravel-frontend-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-D26009D0472AA0BE
+- id: containerd-shim-runc-v*_context_logs
+  config:
+    name: containerd-shim-runc-v*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-D53BD0FCB118E8F6
+- id: containerd-shim-runc-v*_context_unstructured
+  config:
+    name: containerd-shim-runc-v*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-D53BD0FCB118E8F6
+- id: sshd_context_logs
+  config:
+    name: sshd
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-DBBA81964A9ADB0B
+- id: sshd_context_unstructured
+  config:
+    name: sshd
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-DBBA81964A9ADB0B
+- id: google_guest_agent_context_logs
+  config:
+    name: google_guest_agent
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-DE3B68E75686415A
+- id: google_guest_agent_context_unstructured
+  config:
+    name: google_guest_agent
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-DE3B68E75686415A
+- id: dnsmasq kube-dns-* dnsmasq_context_logs
+  config:
+    name: dnsmasq kube-dns-* dnsmasq
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-F4E38F1157023AE7
+- id: dnsmasq kube-dns-* dnsmasq_context_unstructured
+  config:
+    name: dnsmasq kube-dns-* dnsmasq
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-F4E38F1157023AE7
+- id: netd netd netd_context_logs
+  config:
+    name: netd netd netd
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-F8F97D2CD9F450FE
+- id: netd netd netd_context_unstructured
+  config:
+    name: netd netd netd
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-F8F97D2CD9F450FE
+- id: cluster-proportional-autoscaler kube-dns-autoscaler-*_context_logs
+  config:
+    name: cluster-proportional-autoscaler kube-dns-autoscaler-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-FA7A579065F993F1
+- id: cluster-proportional-autoscaler kube-dns-autoscaler-*_context_unstructured
+  config:
+    name: cluster-proportional-autoscaler kube-dns-autoscaler-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-FA7A579065F993F1
+- id: sidecar kube-dns-*_context_logs
+  config:
+    name: sidecar kube-dns-*
+    template: feature_instrument_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: SENSOR_JAVA_LOG_ENRICHMENT
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-FBC014A0E643D1F3
+- id: sidecar kube-dns-*_context_unstructured
+  config:
+    name: sidecar kube-dns-*
+    template: feature_template.json
+    skip: false
+    parameters:
+      enabled: false
+      key: JAVA_LOG_ENRICHMENT_UNSTRUCTURED
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.7
+      scope: PROCESS_GROUP-FBC014A0E643D1F3

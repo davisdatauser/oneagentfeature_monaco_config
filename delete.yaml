@@ -1,0 +1,4 @@
+delete:
+- project: "oneagentfeature_monaco_config"
+  type: settings
+  name: "tomcat easytravel-angular-frontend-*"
