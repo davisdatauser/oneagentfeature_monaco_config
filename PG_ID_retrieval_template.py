@@ -1,15 +1,18 @@
 import requests 
 import json
+import os
 
 # Define the URL and headers
-url = 'https://XXXXXXX.live.com/api/v2/entities'
+url = 'https://XXXXXXXX.live.dynatrace.com/api/v2/entities'
+envToken = os.environ["devToken"]
+token = str('Api-Token ' + envToken)
 headers = {
-    'Authorization': 'Api-Token XXXXXXXXXXXXXXXXXXXXXX', # Your API Token (Read entities permission)
+    'Authorization': token, # Your API Token environment variable
     'Content-Type': 'application/json; charset=utf-8', # Content-Type
 
 }
 params = {
-    'entitySelector': 'type("PROCESS_GROUP"),tag("[Kubernetes]cluster")',   # Replace with your entity selector
+    'entitySelector': 'type("PROCESS_GROUP"),tag("HostGroup:Test"),softwareTechnologies("JAVA")', # Replace with your entity selector
     'pageSize': '100', # Increase limit for larger clusters
 
 }

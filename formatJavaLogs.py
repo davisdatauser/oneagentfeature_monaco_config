@@ -19,18 +19,18 @@ def save_yaml_file(dictionary, file_path):
 
 # Path to your JSON and YAML files
 json_file_path = "scope.json"
-yaml_file_path = "builtinoneagent.features\config_template.yaml"
+#yaml_file_path = "builtinoneagent.features\config_template.yaml"
 new_yaml_file_path = "builtinoneagent.features\config.yaml"
 
 # Load the data
 json_data = import_json_file(json_file_path)
-yaml_data = import_yaml_file(yaml_file_path)
+#yaml_data = import_yaml_file(yaml_file_path)
 print(f'DICTIONARY IDs IMPORTED FROM JSON')
 #new_yaml_file = 
 
 
 # Make a copy of the original YAML data
-new_yaml_data = copy.deepcopy(yaml_data)
+#new_yaml_data = copy.deepcopy(yaml_data)
 
 
 # Iterate through JSON data and append feature change to new YAML for each entity

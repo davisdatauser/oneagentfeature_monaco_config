@@ -8,7 +8,7 @@ environmentGroups:
     environments:
       - name: development-environment
         url:
-          value: "https://XXXXXXX.live.dynatrace.com"
+          value: "https://XXXXXXXX.live.dynatrace.com"
         auth:
           token:
             name: "devToken"
